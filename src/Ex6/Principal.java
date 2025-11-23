@@ -73,7 +73,5 @@ public class Principal {
             System.out.println("Top " + rank + ": " + f.getNome() + " - " + f);
             rank++;
         }
-
-        System.out.println("\n### Simulação Finalizada ###");
     }
 }
