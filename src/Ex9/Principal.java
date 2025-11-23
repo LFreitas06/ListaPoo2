@@ -5,7 +5,6 @@ import java.util.List;
 
 public class Principal {
     public static void main(String[] args) {
-        System.out.println("### Iniciando Simulação Cliente/Cartão ###\n");
 
         CartaoCredito cc1 = new CartaoCredito(1000.0);
         CartaoCredito cc2 = new CartaoCredito(1500.0);
@@ -33,11 +32,9 @@ public class Principal {
         System.out.println("-> Teste Compra Negada (Limite):");
         clientes.get(2).getCartao().comprar(600.0);
 
-        // Pagamento Inválido (Negativo)
         System.out.println("-> Teste Pagamento Inválido:");
         clientes.get(3).getCartao().pagar(-100.0);
 
-        // Compra que eleva a fatura
         clientes.get(3).getCartao().comprar(1800.0);
 
         System.out.println("\n--- Estado após operações ---");
@@ -71,6 +68,5 @@ public class Principal {
         System.out.println("Cliente: " + clienteMaiorFatura.getNome());
         System.out.println("Fatura: R$" + clienteMaiorFatura.getCartao().getFatura());
 
-        System.out.println("\n### Simulação Finalizada ###");
     }
 }

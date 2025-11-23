@@ -5,12 +5,11 @@ import java.util.List;
 
 public class Principal {
     public static void main(String[] args) {
-        System.out.println("### Iniciando Simulação Carro/Motor ###\n");
 
-        Motor m1 = new Motor(100); // 1.0
-        Motor m2 = new Motor(140); // 1.4
-        Motor m3 = new Motor(160); // 1.6
-        Motor m4 = new Motor(200); // 2.0
+        Motor m1 = new Motor(100);
+        Motor m2 = new Motor(140);
+        Motor m3 = new Motor(160);
+        Motor m4 = new Motor(200);
 
         List<Carro> carros = new ArrayList<>();
         carros.add(new Carro("Fiat Uno", m1));
@@ -51,7 +50,5 @@ public class Principal {
         for (Carro c : carros) {
             System.out.println(c);
         }
-
-        System.out.println("\n### Simulação Finalizada ###");
     }
 }

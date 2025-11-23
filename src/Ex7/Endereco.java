@@ -11,7 +11,6 @@ public class Endereco {
         this.numero = numero;
         this.cidade = cidade;
 
-        // Regra de Negócio: UF deve ter exatamente 2 letras
         if (uf != null && uf.length() == 2) {
             this.uf = uf.toUpperCase();
         } else {
@@ -28,7 +27,6 @@ public class Endereco {
         return uf;
     }
 
-    @Override
     public String toString() {
         return "Endereco [rua=" + rua + ", numero=" + numero + ", cidade=" + cidade + ", uf=" + uf + "]";
     }

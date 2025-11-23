@@ -8,7 +8,7 @@ public class CartaoCredito {
         if (limite > 0) {
             this.limite = limite;
         } else {
-            this.limite = 1; // Limite mínimo
+            this.limite = 1;
         }
         this.fatura = 0;
     }
@@ -27,7 +27,7 @@ public class CartaoCredito {
         if (valor > 0) {
             this.fatura -= valor;
             if (this.fatura < 0) {
-                this.fatura = 0; // Fatura não pode ser negativa
+                this.fatura = 0;
             }
             System.out.println("Pagamento de R$" + valor + " recebido. Fatura atual: R$" + this.fatura);
             return true;

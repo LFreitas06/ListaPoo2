@@ -11,7 +11,7 @@ public class Cliente {
 
         if (cartao == null) {
             System.out.println("ERRO: Cliente " + nome + " deve ter um cartão.");
-            this.cartao = new CartaoCredito(1); // Cartão 'dummy'
+            this.cartao = new CartaoCredito(1);
         } else {
             this.cartao = cartao;
         }
