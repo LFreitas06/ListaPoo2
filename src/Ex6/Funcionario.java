@@ -40,7 +40,6 @@ public class Funcionario {
     }
 
     public String toString() {
-        // Formatando o salário para exibição
         String salarioFormatado = String.format("%.2f", this.salario);
         return "Funcionario [id=" + id + ", nome=" + nome + ", salario=R$" + salarioFormatado + "]";
     }
